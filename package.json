@@ -2,7 +2,7 @@
   "name": "chartio",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://fishkaoff.github.io/chartio",
+  "homepage": "http://chartio.surge.sh/",
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^13.4.0",
