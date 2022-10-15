@@ -1,25 +1,27 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import { Routes, Route } from 'react-router-dom'
+import Home from './pages/Home'
+import About from './pages/About'
+import Communication from './pages/Communication';
+import All from './pages/All';
+import FirstChart from './pages/Charts/FirstChart/FirstChart';
+import SecondChart from './pages/Charts/SecondChart/SecondChart';
+import ThirdChart from './pages/Charts/ThirdChart/ThirdChart';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <Routes>
+        <Route path="/" element={<Home/>}/>
+        <Route path="/about" element={<About/>}/>
+        <Route path="/communication" element={<Communication/>}/>
+        <Route path="/all" element={<All/>}/>
+        <Route path="/1" element={<FirstChart/>}/>
+        <Route path="/2" element={<SecondChart/>}/>
+        <Route path="/3" element={<ThirdChart/>}/>
+      </Routes>
     </div>
+    
   );
 }
 
