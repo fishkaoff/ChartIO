@@ -4,7 +4,7 @@ import Wrapper from '../components/HomeComponents/Wrapper'
 
 const Home = () => {
   return (
-    <div className='background-img'>
+    <div className='background-img h-screen'>
         <Header />
         <Wrapper />
     </div>

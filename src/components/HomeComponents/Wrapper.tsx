@@ -7,7 +7,7 @@ const Wrapper = () => {
     const [formuls, setFromula] = useState([
         {id:1, name: "X=Xo+Vt", page: "/1"},
         {id:2, name: "V=at", page: "/2"},
-        {id:3, name: "V=Vo+((at)^2)/2", page: "/3"},
+        {id:3, name: "V=Vo+at", page: "/3"},
     ])
 
   return (
@@ -15,7 +15,7 @@ const Wrapper = () => {
         <div className='title m-auto mt-28'>
             <h1 className='text-center'>Новый подход к построению графиков</h1>
         </div>
-        <div className='flex m-auto'>
+        <div className='flex m-auto my-auto'>
             {formuls.map((formula) => 
                 <Card formula={formula} key={formula.id}/>
             )}

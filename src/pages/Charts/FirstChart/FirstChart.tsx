@@ -2,7 +2,7 @@ import React from 'react'
 import Header from '../../../components/Header'
 import ChartsWrapper from '../ChartsWrapper'
 import AllFormuls from '../../../data/formuls'
-import Input from '../../../components/FirstChart/Input'
+import Input from '../../../components/FirstChart/FirstChartWrapper'
 
 
 const FirstChart = () => {
