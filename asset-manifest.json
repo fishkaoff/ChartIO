@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/chartio/static/css/main.32dd9b47.css",
+    "main.js": "/chartio/static/js/main.bba26759.js",
+    "static/media/background.jpg": "/chartio/static/media/background.83f758be97fba5e9ee3e.jpg",
+    "index.html": "/chartio/index.html",
+    "static/media/Group.svg": "/chartio/static/media/Group.4bd842e9503c31176cab.svg",
+    "main.32dd9b47.css.map": "/chartio/static/css/main.32dd9b47.css.map",
+    "main.bba26759.js.map": "/chartio/static/js/main.bba26759.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.32dd9b47.css",
+    "static/js/main.bba26759.js"
+  ]
+}
