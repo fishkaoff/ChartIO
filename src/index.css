@@ -12,6 +12,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
 }
 
 code {
@@ -63,7 +64,7 @@ code {
 }
 
 .background-img {
-  background-image: url("./assets/images/background.jpg");
+  background: url("./assets/images/background.jpg") no-repeat center top / cover;
 }
 
 
@@ -118,4 +119,174 @@ code {
 .chart-bg {
   background-color: #AEAEAE;
   width: 650px;
+}
+
+
+/* responsive */
+
+@media (min-width: 1536px) {
+  .container {
+    max-width: 1400px;
+  }
+}
+
+
+
+@media screen and (max-width: 1300px) {
+  body {
+    overflow: hidden;
+  }
+  .container {
+    width: 1140px;
+  }
+
+  #title {
+    font-size: 48px;
+  }
+
+  .card-title {
+    font-size: 36px;
+  }
+
+  .arrow {
+    background: url(./assets/images/medium-right-arrow.svg);
+    width: 50px !important;
+    height: 50px !important;
+  }
+
+  .card-background {
+    width: 300px;
+    height: 150px;
+  }
+}
+
+
+@media screen and (max-width: 1030px) {
+  body {
+    overflow: hidden;
+  }
+  .container {
+    width: 980px;
+  }
+  
+  #title {
+    font-size: 42px;
+    width: 600px;
+  }
+
+  .card-title {
+    font-size: 32px;
+  }
+
+  .arrow {
+    background: url(./assets/images/small-right-arrow.svg);
+    width: 20px !important;
+    height: 20px !important;
+  }
+
+  .card-background {
+    width: 250px;
+    height: 100px;
+  }
+}
+
+@media screen and (max-width: 770px) {
+  body {
+    overflow: hidden;
+  }
+  .container {
+    width: 720px;
+  }
+  .card-background {
+    width: 200px;
+    height: 100px;
+  }
+  .card-title {
+    font-size: 28px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  body {
+    overflow: hidden;
+  }
+  .nav-item {
+    font-size: 26px;
+    margin-right: 30px;
+  }
+  .title {
+    font-size: 38px;
+  }
+
+  #title {
+    width: 400px;
+  }
+  .container {
+    width: 580px;
+  }
+  .card-background {
+    width: 150px;
+    height: 100px;
+    margin-left: 15px !important;
+  }
+  .card-title {
+    font-size: 28px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  body {
+    overflow: hidden;
+  }
+  .background-img {
+    height: 100%;
+  }
+
+  .nav-item {
+    font-size: 22px;
+    padding-right: 20px;
+  }
+  .title {
+    font-size: 38px;
+    margin: 0 auto;
+  }
+
+  #title {
+    width: 400px;
+    margin: 0;
+  }
+  .container {
+    width: 460px;
+  }
+  .card-background {
+    width: 150px;
+    height: 100px;
+  }
+
+  .cards-wrapper {
+    display: block;
+    margin-left: 110px;
+  }
+
+  .card-title {
+    font-size: 28px;
+  }
+  
+}
+
+@media screen and (max-width: 391px) {
+  body {
+    overflow: hidden;
+  }
+  .container {
+    width: 330px;
+  }
+  .nav-item {
+    font-size: 18px ;
+    padding-right: 0px;
+  }
+  .cards-wrapper {
+    display: block;
+    margin-left: 70px;
+  }
 }

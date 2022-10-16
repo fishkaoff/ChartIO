@@ -12,10 +12,10 @@ const Wrapper = () => {
 
   return (
     <div className='container items-center'>
-        <div className='title m-auto mt-28'>
+        <div className='title m-auto mt-28' id='title'>
             <h1 className='text-center'>Новый подход к построению графиков</h1>
         </div>
-        <div className='flex m-auto my-auto'>
+        <div className='flex m-auto cards-wrapper'>
             {formuls.map((formula) => 
                 <Card formula={formula} key={formula.id}/>
             )}
